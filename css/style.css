@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    height: 6em;
+    background: linear-gradient(to left, #3498db, #ffffff);/* degradado de color*/
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* centrar de izquierda a derecha */
+    justify-content: space-between; /* espacio entre los elementos arriba a abajo */
+    position: fixed;
+    z-index: 1000;
+    padding: 0 2em;
+}
+
+.header img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    margin-left: 4em;
+}
+
+.header img:hover{
+    transform: scale(1.1);
+}
+
+.nav{
+    width: 80%;
+    margin-top: 2%;
+}
+
+.barnav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    width: auto;
+    margin: 0 15px; 
+    height: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    line-height: 30px;
+    transition: background-color 0.3s;
+    margin-right: 8em;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu:hover{
+    transform: scale(1.1);
+}
+
+.menu:hover a {
+    color: white; 
+}
+
+.banner{
+    margin-top: 8.5em;
+    width: 80%;
+    height: calc(50vh - 10em);
+    background-color: #aabbcc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+}
+
+.article{
+    width: 80%;
+    height: auto;
+    padding: 35px 35px 35px 35px;
+    background-color: #aabbcc;
+    margin-top: 8em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+    line-height: 2.0;
+    scroll-margin-top: 8em;
+}
+
+.article h1{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.article p{
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.article ul{
+    list-style-type: none;
+    padding-left: 20px; 
+  }
+
+.article li {
+    margin-top: 10px;
+    margin-right: 20em;
+}
+
+.article li:before {
+    content: "➜";  
+    margin-right: 20px; 
+  } 
+
+.autor{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#inicio img{
+    margin-top: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+}
+
+.footer{
+    width: 100%;
+    height: 7em;
+    background: linear-gradient(to left, #3498db, #8e44ad); /* degradado de color*/
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 2.0;
+    font-family: 'Georgia', serif;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas */
+    .header {
+        height: 8em; /* Ajusta la altura del encabezado */
+    }
+
+    .header img {
+        height: 50px; /* Ajusta el tamaño del logo */
+        width: 50px;
+    }
+
+    .menu {
+        margin-right: 2em; /* Ajusta el espacio entre elementos del menú */
+        font-size: 16px; /* Ajusta el tamaño de fuente del menú */
+    }
+
+    .article {
+        width: 90%; /* Ajusta el ancho de las secciones de artículo */
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para pantallas medianas */
+    .header {
+        height: 10em; /* Ajusta la altura del encabezado */
+    }
+
+    .header img {
+        height: 60px; /* Ajusta el tamaño del logo */
+        width: 60px;
+    }
+
+    .menu {
+        margin-right: 4em; /* Ajusta el espacio entre elementos del menú */
+        font-size: 18px; /* Ajusta el tamaño de fuente del menú */
+    }
+
+    .article {
+        width: 70%; /* Ajusta el ancho de las secciones de artículo */
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Estilos para pantallas grandes */
+    .header {
+        height: 6em; /* Ajusta la altura del encabezado */
+    }
+
+    .header img {
+        height: 70px; /* Ajusta el tamaño del logo */
+        width: 70px;
+    }
+
+    .menu {
+        margin-right: 8em; /* Ajusta el espacio entre elementos del menú */
+        font-size: 20px; /* Ajusta el tamaño de fuente del menú */
+    }
+
+    .article {
+        width: 80%; /* Ajusta el ancho de las secciones de artículo */
+    }
+}
