@@ -14,7 +14,7 @@ body{
     align-items: center;
 }
 
-.header{
+header.header{
     width: 100%;
     height: 6em;
     background: linear-gradient(to left, #3498db, #ffffff);/* degradado de color*/
@@ -85,20 +85,20 @@ body{
     color: white; 
 }
 
-.banner{
-    margin-top: 8.5em;
-    width: 80%;
-    height: calc(50vh - 10em);
-    background-color: #aabbcc;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Arial', sans-serif;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #dcdcdc;
-}
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición vertical según tus preferencias */
+    right: 20px; /* Ajusta la posición horizontal según tus preferencias */
+    background-color: #25d366; /* Color de fondo del botón */
+    border-radius: 50%; /* Para hacer el botón redondo */
+    padding: 10px; /* Espacio alrededor del ícono */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efecto 3D */
+  }
+  
+  .whatsapp-button img {
+    width: 3em; /* Tamaño del ícono de WhatsApp */
+    height: auto; /* Para mantener la proporción */
+  }
 
 .article{
     width: 80%;
@@ -142,11 +142,6 @@ body{
     content: "➜";  
     margin-right: 20px; 
   } 
-
-.autor{
-    font-weight: bold;
-    font-size: 20px;
-}
 
 #inicio img{
     margin-top: 1em;
