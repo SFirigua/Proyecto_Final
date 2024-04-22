@@ -16,8 +16,8 @@ body{
 
 header.header{
     width: 100%;
-    height: 6em;
-    background: linear-gradient(to left, #3498db, #ffffff);/* degradado de color*/
+    height: 4em;
+    background: linear-gradient(to left, #2b9fec, #fafafa);
     display: flex;
     flex-direction: row;
     align-items: center; /* centrar de izquierda a derecha */
@@ -25,20 +25,42 @@ header.header{
     position: fixed;
     z-index: 1000;
     padding: 0 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header img {
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+header .logo{
+    font-size: 2em;
+    width: 100%;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
     transition: transform 0.3s ease;
-    margin-left: 4em;
 }
 
-.header img:hover{
-    transform: scale(1.1);
+header .logo span{
+    color: blue; 
+}
+
+.header .logo:hover{
+    transform: scale(1.05);
+}
+
+.header .logo:hover a{
+    color: white;
 }
 
 .nav{
@@ -66,7 +88,7 @@ header.header{
     border-radius: 30px;
     list-style: none;
     font-size: 20px;
-    font-family: 'Georgia', serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 30px;
     transition: background-color 0.3s;
     margin-right: 8em;
@@ -85,27 +107,74 @@ header.header{
     color: white; 
 }
 
-.whatsapp-button {
+.floating-button {
     position: fixed;
-    bottom: 20px; /* Ajusta la posición vertical según tus preferencias */
-    right: 20px; /* Ajusta la posición horizontal según tus preferencias */
-    background-color: #25d366; /* Color de fondo del botón */
-    border-radius: 50%; /* Para hacer el botón redondo */
-    padding: 10px; /* Espacio alrededor del ícono */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efecto 3D */
-  }
-  
-  .whatsapp-button img {
-    width: 3em; /* Tamaño del ícono de WhatsApp */
-    height: auto; /* Para mantener la proporción */
-  }
+    bottom: 60px;
+    right: 24px;
+    /* Alineado a la derecha */
+    background-color: #ecdf2b;
+    color: white;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1100;
+    transition: background-color 0.3s ease;
+}
 
-.article{
+.floating-button:hover {
+    background-color: #FF1717; 
+}
+  
+.iconos-redes {
+    position: fixed;
+    bottom: 120px;
+    right: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.iconos-redes.show {
+    opacity: 1;
+}
+  
+.iconos-redes a {
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ecdf2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-redes a:hover{
+    background-color: #FF1717;     
+}
+  
+.iconos-redes.show a:nth-child(1) {
+    transform: translateY(0px) rotate(0deg);
+    /* Primero icono, no se desplaza */
+}
+  
+.iconos-redes.show a:nth-child(2) {
+    transform: translateY(0px) rotate(0deg);
+    /* Segundo icono, no se desplaza */
+}
+
+.article {
     width: 80%;
-    height: auto;
-    padding: 35px 35px 35px 35px;
-    background-color: #aabbcc;
-    margin-top: 8em;
+    padding: 35px; 
+    background-color: #f2f2f2;
+    margin-top: 7em; 
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -115,53 +184,93 @@ header.header{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #dcdcdc;
     line-height: 2.0;
-    scroll-margin-top: 8em;
+    scroll-margin-top: 7em;
 }
 
-.article h1{
-    font-size: 30px;
-    text-decoration: underline;
-}
-
-.article p{
-    text-align: justify;
-    margin-top: 15px;
-}
-
-.article ul{
-    list-style-type: none;
-    padding-left: 20px; 
-  }
-
-.article li {
-    margin-top: 10px;
-    margin-right: 20em;
-}
-
-.article li:before {
-    content: "➜";  
-    margin-right: 20px; 
-  } 
-
-#inicio img{
-    margin-top: 1em;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #000;
-}
-
-.footer{
-    width: 100%;
-    height: 7em;
-    background: linear-gradient(to left, #3498db, #8e44ad); /* degradado de color*/
-    margin-top: 2%;
+.article-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    line-height: 2.0;
-    font-family: 'Georgia', serif;
+}
+
+.article-image img {
+    max-width: 50%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 10px; /* Redondea los bordes de la imagen */
+}
+
+.article-text {
+    width: 50%; /* Asigna el 50% del ancho para el texto */
+    padding: 0 20px; /* Añade un espacio alrededor del texto */
+}
+
+.article h1 {
+    font-size: 30px;
+}
+
+  .footer {
+    bottom: 0;
+    margin-top: 5em;
+    width: 100%;
+    background: linear-gradient(to left, #2b9fec, #fafafa);
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    z-index: 1000;
+}
+
+footer .footer{
+    margin-top: 10em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.map-container {
+    flex: 1;
+    margin-left: 11em;
+    border-radius: 10px; /* Redondea los bordes del contenedor del mapa */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    
+}
+
+.map-container:hover{
+    transform: scale(1.05);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-info {
+    flex: 2;
+    margin-left: 8em;
+    line-height: 1.5;
+}
+
+.footer-info a{
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.footer-info a:hover{
+    color: #2b9fec;
+}
+
+.social-icons {
+    margin-top: 1em;
+}
+
+.social-icons i {
+    font-size: 24px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px; /* Espacio entre los iconos */
 }
 
 @media only screen and (max-width: 600px) {
@@ -194,6 +303,14 @@ header.header{
     .header img {
         height: 60px; /* Ajusta el tamaño del logo */
         width: 60px;
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Muestra la barra de navegación cuando el checkbox está marcado */
+    }
+
+    header .fa-bars{
+        display: block;
     }
 
     .menu {
