@@ -112,7 +112,7 @@ header .logo span{
     bottom: 60px;
     right: 24px;
     /* Alineado a la derecha */
-    background-color: #ecdf2b;
+    background-color: black;
     color: white;
     width: 43px;
     height: 43px;
@@ -150,7 +150,7 @@ header .logo span{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ecdf2b;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
