@@ -14,9 +14,9 @@ body{
     align-items: center;
 }
 
-header.header{
+header.header {
     width: 100%;
-    height: 4em;
+    height: 5em;
     background: linear-gradient(to left, #2b9fec, #fafafa);
     display: flex;
     flex-direction: row;
@@ -28,11 +28,11 @@ header.header{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header #toggler{
+header #toggler {
     display: none;
 }
 
-header .fa-bars{
+header .fa-bars {
     font-size: 3rem;
     color: #333;
     border-radius: .5rem;
@@ -42,8 +42,8 @@ header .fa-bars{
     display: none;
 }
 
-header .logo{
-    font-size: 2em;
+header .logo {
+    font-size: 1.8em;
     width: 100%;
     color: black;
     font-weight: bolder;
@@ -51,19 +51,19 @@ header .logo{
     transition: transform 0.3s ease;
 }
 
-header .logo span{
+header .logo span {
     color: blue; 
 }
 
-.header .logo:hover{
+.header .logo:hover {
     transform: scale(1.05);
 }
 
-.header .logo:hover a{
+.header .logo:hover a {
     color: white;
 }
 
-.nav{
+.nav {
     width: 80%;
     margin-top: 2%;
 }
@@ -78,7 +78,6 @@ header .logo span{
 
 .menu {
     width: auto;
-    margin: 0 15px; 
     height: 100%;
     margin-bottom: 25px;
     display: flex;
@@ -91,7 +90,7 @@ header .logo span{
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
     transition: background-color 0.3s;
-    margin-right: 8em;
+    margin-right: 7.5em; /* Ajustado el margen derecho */
 }
 
 .menu a {
@@ -99,7 +98,7 @@ header .logo span{
     text-decoration: none;
 }
 
-.menu:hover{
+.menu:hover {
     transform: scale(1.1);
 }
 
@@ -107,11 +106,22 @@ header .logo span{
     color: white; 
 }
 
+.user-icon {
+    font-size: 1.5rem;
+    color: black;
+    margin-right: 1em;
+    transition: transform 0.3s ease;
+}
+
+.user-icon:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
 .floating-button {
     position: fixed;
     bottom: 60px;
     right: 24px;
-    /* Alineado a la derecha */
     background-color: black;
     color: white;
     width: 43px;
@@ -174,7 +184,7 @@ header .logo span{
     width: 80%;
     padding: 35px; 
     background-color: #f2f2f2;
-    margin-top: 7em; 
+    margin-top: 8em; 
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -194,9 +204,9 @@ header .logo span{
     align-items: center;
 }
 
-.article-image img {
-    max-width: 50%; /* Ajusta el tamaño máximo de la imagen */
-    height: auto;
+.article-image_1 img {
+    width: 30em;
+    height: 28em;
     border-radius: 10px; /* Redondea los bordes de la imagen */
 }
 
@@ -205,22 +215,37 @@ header .logo span{
     padding: 0 20px; /* Añade un espacio alrededor del texto */
 }
 
-.article h1 {
+.article h1,
+.article_2 h1 {
     font-size: 30px;
+    margin-bottom: 0.5em;
+}
+
+.article_2 {
+    width: 80%;
+    padding: 35px; 
+    background-color: #f2f2f2;
+    margin-top: 3em; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+    line-height: 2.0;
+    scroll-margin-top: 7em;
 }
 
   .footer {
     bottom: 0;
-    margin-top: 5em;
+    margin-top: 4em;
     width: 100%;
     background: linear-gradient(to left, #2b9fec, #fafafa);
     font-family: 'Open Sans', sans-serif;
     color: black;
     z-index: 1000;
-}
-
-footer .footer{
-    margin-top: 10em;
 }
 
 .footer-content {
@@ -273,73 +298,3 @@ footer .footer{
     margin-right: 10px; /* Espacio entre los iconos */
 }
 
-@media only screen and (max-width: 600px) {
-    /* Estilos para pantallas pequeñas */
-    .header {
-        height: 8em; /* Ajusta la altura del encabezado */
-    }
-
-    .header img {
-        height: 50px; /* Ajusta el tamaño del logo */
-        width: 50px;
-    }
-
-    .menu {
-        margin-right: 2em; /* Ajusta el espacio entre elementos del menú */
-        font-size: 16px; /* Ajusta el tamaño de fuente del menú */
-    }
-
-    .article {
-        width: 90%; /* Ajusta el ancho de las secciones de artículo */
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Estilos para pantallas medianas */
-    .header {
-        height: 10em; /* Ajusta la altura del encabezado */
-    }
-
-    .header img {
-        height: 60px; /* Ajusta el tamaño del logo */
-        width: 60px;
-    }
-
-    header #toggler:checked ~ .navbar{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Muestra la barra de navegación cuando el checkbox está marcado */
-    }
-
-    header .fa-bars{
-        display: block;
-    }
-
-    .menu {
-        margin-right: 4em; /* Ajusta el espacio entre elementos del menú */
-        font-size: 18px; /* Ajusta el tamaño de fuente del menú */
-    }
-
-    .article {
-        width: 70%; /* Ajusta el ancho de las secciones de artículo */
-    }
-}
-
-@media only screen and (min-width: 1025px) {
-    /* Estilos para pantallas grandes */
-    .header {
-        height: 6em; /* Ajusta la altura del encabezado */
-    }
-
-    .header img {
-        height: 70px; /* Ajusta el tamaño del logo */
-        width: 70px;
-    }
-
-    .menu {
-        margin-right: 8em; /* Ajusta el espacio entre elementos del menú */
-        font-size: 20px; /* Ajusta el tamaño de fuente del menú */
-    }
-
-    .article {
-        width: 80%; /* Ajusta el ancho de las secciones de artículo */
-    }
-}
