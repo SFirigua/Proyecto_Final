@@ -9,10 +9,10 @@ Se ha utilizado HTML, CSS y JavaScript para desarrollar la página web.
 <div style="display: flex; justify-content: center; margin-bottom: 20px;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/320px-HTML5_logo_and_wordmark.svg.png" 
        alt="HTML Logo" 
-       style="margin-right: 15px; width: 200px; height: 200px;">
+       style="margin-right: 30px; width: 200px; height: 200px;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/320px-CSS3_logo_and_wordmark.svg.png" 
        alt="CSS Logo" 
-       style="margin-right: 15px; width: 200px; height: 200px;">
+       style="margin-right: 30px; width: 200px; height: 200px;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/320px-Unofficial_JavaScript_logo_2.svg.png" 
        alt="JavaScript Logo" 
        style="width: 200px; height: 200px;">
@@ -33,7 +33,7 @@ Puedes acceder a la página web de Electrónicas Omega haciendo clic en el sigui
        alt="imagen de la pagina" 
        width="500" 
        height="400" 
-       style="border-radius: 10px;">
+       style="border-radius: 10px; margin-top: 20px;">
 </p>
 
 
