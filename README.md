@@ -7,9 +7,9 @@ Este proyecto consiste en la creación de una página web para el negocio Electr
 Se ha utilizado HTML, CSS y JavaScript para desarrollar la página web.
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/320px-HTML5_logo_and_wordmark.svg.png" alt="HTML Logo" style="margin-right: 20px; max-width: 100px;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/320px-CSS3_logo_and_wordmark.svg.png" alt="CSS Logo" style="margin-right: 20px; max-width: 100px;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/320px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript Logo" style="max-width: 100px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/320px-HTML5_logo_and_wordmark.svg.png" alt="HTML Logo" style="margin-right: 20px; width: 300px; height: 200px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/320px-CSS3_logo_and_wordmark.svg.png" alt="CSS Logo" style="margin-right: 20px; width: 300px; height: 200px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/320px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript Logo" style="width: 300px; height: 200px;">
 </p>
 
 ## Instalación
@@ -23,7 +23,7 @@ git clone https://github.com/SFirigua/Proyecto_Final.git
 Puedes acceder a la página web de Electrónicas Omega haciendo clic en el siguiente enlace: https://sfirigua.github.io/Proyecto_Final/
 
 <p align="center">
-  <img src="https://github.com/SFirigua/Proyecto_Final/blob/5abd7cbaee0399d3cf8f920d5ec4e2801d4ed902/pagina.png" alt="imagen de la pagina" width="300" height="200">
+  <img src="https://github.com/SFirigua/Proyecto_Final/blob/5abd7cbaee0399d3cf8f920d5ec4e2801d4ed902/pagina.png" alt="imagen de la pagina" width="600" height="600">
 </p>
 
 ## Créditos
