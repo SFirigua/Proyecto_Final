@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
     background: #f2f2f2;
@@ -20,26 +20,14 @@ header.header {
     background: linear-gradient(to left, #2b9fec, #fafafa);
     display: flex;
     flex-direction: row;
-    align-items: center; /* centrar de izquierda a derecha */
-    justify-content: space-between; /* espacio entre los elementos arriba a abajo */
+    align-items: center;
+    /* centrar de izquierda a derecha */
+    justify-content: space-between;
+    /* espacio entre los elementos arriba a abajo */
     position: fixed;
     z-index: 1000;
     padding: 0 2em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header #toggler {
-    display: none;
-}
-
-header .fa-bars {
-    font-size: 3rem;
-    color: #333;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
-    cursor: pointer;
-    border: .1rem solid rgba(0, 0, 0, .3);
-    display: none;
 }
 
 header .logo {
@@ -52,7 +40,7 @@ header .logo {
 }
 
 header .logo span {
-    color: blue; 
+    color: blue;
 }
 
 .header .logo:hover {
@@ -77,7 +65,7 @@ header .logo span {
 }
 
 .menu {
-    width: auto;
+    width: 100%;
     height: 100%;
     margin-bottom: 25px;
     display: flex;
@@ -90,7 +78,8 @@ header .logo span {
     font-family: 'Open Sans', sans-serif;
     line-height: 30px;
     transition: background-color 0.3s;
-    margin-right: 7.5em; /* Ajustado el margen derecho */
+    margin-right: 7.5em;
+    /* Ajustado el margen derecho */
 }
 
 .menu a {
@@ -103,7 +92,7 @@ header .logo span {
 }
 
 .menu:hover a {
-    color: white; 
+    color: white;
 }
 
 .user-icon {
@@ -136,9 +125,9 @@ header .logo span {
 }
 
 .floating-button:hover {
-    background-color: #FF1717; 
+    background-color: #FF1717;
 }
-  
+
 .iconos-redes {
     position: fixed;
     bottom: 120px;
@@ -149,11 +138,11 @@ header .logo span {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-  
+
 .iconos-redes.show {
     opacity: 1;
 }
-  
+
 .iconos-redes a {
     color: white;
     text-decoration: none;
@@ -166,15 +155,15 @@ header .logo span {
     align-items: center;
 }
 
-.iconos-redes a:hover{
-    background-color: #FF1717;     
+.iconos-redes a:hover {
+    background-color: #FF1717;
 }
-  
+
 .iconos-redes.show a:nth-child(1) {
     transform: translateY(0px) rotate(0deg);
     /* Primero icono, no se desplaza */
 }
-  
+
 .iconos-redes.show a:nth-child(2) {
     transform: translateY(0px) rotate(0deg);
     /* Segundo icono, no se desplaza */
@@ -182,9 +171,9 @@ header .logo span {
 
 .article {
     width: 80%;
-    padding: 35px; 
+    padding: 35px;
     background-color: #f2f2f2;
-    margin-top: 8em; 
+    margin-top: 8em;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -204,28 +193,59 @@ header .logo span {
     align-items: center;
 }
 
-.article-image_1 img {
+.article-image img {
     width: 30em;
-    height: 28em;
-    border-radius: 10px; /* Redondea los bordes de la imagen */
+    height: 30em;
+    border-radius: 10px;
+    /* Redondea los bordes de la imagen */
+}
+
+.article-image-nosotros img {
+    width: 30em;
+    height: 24em;
+    border-radius: 10px;
+    /* Redondea los bordes de la imagen */
 }
 
 .article-text {
-    width: 50%; /* Asigna el 50% del ancho para el texto */
-    padding: 0 20px; /* Añade un espacio alrededor del texto */
+    width: 50%;
+    /* Asigna el 50% del ancho para el texto */
+    padding: 0 20px;
+    /* Añade un espacio alrededor del texto */
 }
 
-.article h1,
-.article_2 h1 {
+.article h1 {
     font-size: 30px;
     margin-bottom: 0.5em;
 }
 
-.article_2 {
+.article_nosotros {
     width: 80%;
-    padding: 35px; 
+    padding: 35px;
     background-color: #f2f2f2;
-    margin-top: 3em; 
+    margin-top: 3em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+    line-height: 2.0;
+    scroll-margin-top: 7em;
+}
+
+.article_nosotros h1 {
+    font-size: 26px;
+    margin-right: 1em;
+}
+
+.article_productos {
+    width: 80%;
+    padding: 35px;
+    background-color: #f2f2f2;
+    margin-top: 3em;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -238,7 +258,52 @@ header .logo span {
     scroll-margin-top: 7em;
 }
 
-  .footer {
+.article_productos em {
+    font-size: 23px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.imagenes_productos {
+    width: 80%;
+    margin: 35px auto;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 10px 0 20px;
+}
+
+.imagenes_productos img {
+    max-width: 350px;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes_productos img:hover {
+    transform: scale(1.05);
+}
+
+.imagenes_productos::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.imagenes_productos::-webkit-scrollbar-thumb {
+    background-color: #2b9fec;
+    border-radius: 5px;
+}
+
+.imagenes_productos::-webkit-scrollbar-track {
+    background-color: #333333;
+    /* Color del fondo de la barra de desplazamiento */
+    border-radius: 5px;
+    /* Redondea los bordes del fondo de la barra de desplazamiento */
+}
+
+.footer {
     bottom: 0;
     margin-top: 4em;
     width: 100%;
@@ -258,13 +323,14 @@ header .logo span {
 .map-container {
     flex: 1;
     margin-left: 11em;
-    border-radius: 10px; /* Redondea los bordes del contenedor del mapa */
+    border-radius: 10px;
+    /* Redondea los bordes del contenedor del mapa */
     overflow: hidden;
     transition: transform 0.3s ease;
-    
+
 }
 
-.map-container:hover{
+.map-container:hover {
     transform: scale(1.05);
 }
 
@@ -279,22 +345,108 @@ header .logo span {
     line-height: 1.5;
 }
 
-.footer-info a{
-    text-decoration: none; /* Elimina el subrayado del enlace */
+.footer-info a {
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
     color: inherit;
     transition: background-color 0.3s ease;
 }
 
-.footer-info a:hover{
+.footer-info a:hover {
     color: #2b9fec;
 }
 
 .social-icons {
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 .social-icons i {
-    font-size: 24px; /* Ajusta el tamaño según sea necesario */
-    margin-right: 10px; /* Espacio entre los iconos */
+    font-size: 24px;
+    /* Ajusta el tamaño según sea necesario */
+    margin-right: 10px;
+    /* Espacio entre los iconos */
 }
 
+.footer-info .fa-id-card {
+    color: black; /* Cambia el color del icono a azul */
+    font-size: 18px; /* Aumenta el tamaño del icono a 24px */
+    margin-right: 3px; /* Añade un margen a la derecha del icono */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-info .fa-id-card:hover {
+    color: #2b9fec;
+
+}
+
+@media screen and (max-width: 600px) {
+    header.header {
+        padding: 0 1em; /* Reducción del padding en dispositivos más pequeños */
+        height: 4em; /* Reducción de la altura del encabezado */
+    }
+
+    .nav {
+        margin-top: 1%; /* Ajuste del margen superior */
+        width: 90%; /* Reducción del ancho del contenedor de navegación */
+    }
+
+    .header .logo{
+        font-size: 1.3em;
+    }
+
+    .menu {
+        margin-right: 2.5em;
+        margin-top: 1.8em; /* Ajuste del margen superior */
+        font-size: 0.8em;
+    }
+
+    .user-icon {
+        margin-right: 0.5em;
+    }
+
+    .article {
+        width: 90%; /* Reducción del ancho del artículo */
+        margin-top: 2em; /* Ajuste del margen superior */
+    }
+
+    .article-image img {
+        width: 100%; /* Ajustar el ancho de la imagen al contenedor */
+        height: auto; /* Mantener la proporción */
+        border-radius: 0; /* Eliminar el radio de borde de la imagen */
+    }
+
+    .article-text {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        padding: 10px; /* Añadir espacio alrededor del texto */
+    }
+
+    .article h1 {
+        font-size: 24px; /* Reducción del tamaño del título */
+    }
+
+    /* Modificaciones para el botón flotante */
+    .floating-button {
+        bottom: 50px;
+        right: 12px;
+    }
+
+    .footer {
+        margin-top: 2em;
+        padding: 20px; /* Añadir un poco de espacio alrededor del contenido */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Cambiar a disposición de columna */
+        align-items: center; /* Centrar los elementos horizontalmente */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .map-container {
+        margin: 0 auto; /* Centrar el mapa horizontalmente */
+    }
+
+    .footer-info {
+        margin: 1em 0; /* Añadir un poco de espacio entre los elementos */
+    }
+}
