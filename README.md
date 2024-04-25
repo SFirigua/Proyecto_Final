@@ -31,7 +31,7 @@ Puedes acceder a la página web de Electrónicas Omega haciendo clic en el sigui
 <p align="center" style="margin-bottom: 20px;">
   <img src="https://github.com/SFirigua/Proyecto_Final/blob/5abd7cbaee0399d3cf8f920d5ec4e2801d4ed902/pagina.png" 
        alt="imagen de la pagina" 
-       width="500" 
+       width="700" 
        height="400" 
        style="border-radius: 10px; margin-top: 20px;">
 </p>
