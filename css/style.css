@@ -197,21 +197,17 @@ header .logo span {
     width: 30em;
     height: 30em;
     border-radius: 10px;
-    /* Redondea los bordes de la imagen */
 }
 
 .article-image-nosotros img {
     width: 30em;
     height: 24em;
     border-radius: 10px;
-    /* Redondea los bordes de la imagen */
 }
 
 .article-text {
     width: 50%;
-    /* Asigna el 50% del ancho para el texto */
     padding: 0 20px;
-    /* Añade un espacio alrededor del texto */
 }
 
 .article h1 {
@@ -238,6 +234,28 @@ header .logo span {
 
 .article_nosotros h1 {
     font-size: 26px;
+    margin-right: 1em;
+}
+
+.article_2 {
+    width: 80%;
+    padding: 35px;
+    background-color: #f2f2f2;
+    margin-top: 3em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+    line-height: 2.0;
+    scroll-margin-top: 7em;
+}
+
+.article_2 h1 {
+    font-size: 24px;
     margin-right: 1em;
 }
 
@@ -368,9 +386,12 @@ header .logo span {
 }
 
 .footer-info .fa-id-card {
-    color: black; /* Cambia el color del icono a azul */
-    font-size: 18px; /* Aumenta el tamaño del icono a 24px */
-    margin-right: 3px; /* Añade un margen a la derecha del icono */
+    color: black;
+    /* Cambia el color del icono a azul */
+    font-size: 18px;
+    /* Aumenta el tamaño del icono a 24px */
+    margin-right: 3px;
+    /* Añade un margen a la derecha del icono */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -382,22 +403,27 @@ header .logo span {
 
 @media screen and (max-width: 600px) {
     header.header {
-        padding: 0 1em; /* Reducción del padding en dispositivos más pequeños */
-        height: 4em; /* Reducción de la altura del encabezado */
+        padding: 0 1em;
+        /* Reducción del padding en dispositivos más pequeños */
+        height: 4em;
+        /* Reducción de la altura del encabezado */
     }
 
     .nav {
-        margin-top: 1%; /* Ajuste del margen superior */
-        width: 90%; /* Reducción del ancho del contenedor de navegación */
+        margin-top: 1%;
+        /* Ajuste del margen superior */
+        width: 90%;
+        /* Reducción del ancho del contenedor de navegación */
     }
 
-    .header .logo{
+    .header .logo {
         font-size: 1.3em;
     }
 
     .menu {
         margin-right: 2.5em;
-        margin-top: 1.8em; /* Ajuste del margen superior */
+        margin-top: 1.8em;
+        /* Ajuste del margen superior */
         font-size: 0.8em;
     }
 
@@ -406,23 +432,31 @@ header .logo span {
     }
 
     .article {
-        width: 90%; /* Reducción del ancho del artículo */
-        margin-top: 2em; /* Ajuste del margen superior */
+        width: 90%;
+        /* Reducción del ancho del artículo */
+        margin-top: 2em;
+        /* Ajuste del margen superior */
     }
 
     .article-image img {
-        width: 100%; /* Ajustar el ancho de la imagen al contenedor */
-        height: auto; /* Mantener la proporción */
-        border-radius: 0; /* Eliminar el radio de borde de la imagen */
+        width: 100%;
+        /* Ajustar el ancho de la imagen al contenedor */
+        height: auto;
+        /* Mantener la proporción */
+        border-radius: 0;
+        /* Eliminar el radio de borde de la imagen */
     }
 
     .article-text {
-        width: 100%; /* Ocupar todo el ancho disponible */
-        padding: 10px; /* Añadir espacio alrededor del texto */
+        width: 100%;
+        /* Ocupar todo el ancho disponible */
+        padding: 10px;
+        /* Añadir espacio alrededor del texto */
     }
 
     .article h1 {
-        font-size: 24px; /* Reducción del tamaño del título */
+        font-size: 24px;
+        /* Reducción del tamaño del título */
     }
 
     /* Modificaciones para el botón flotante */
@@ -433,20 +467,26 @@ header .logo span {
 
     .footer {
         margin-top: 2em;
-        padding: 20px; /* Añadir un poco de espacio alrededor del contenido */
+        padding: 20px;
+        /* Añadir un poco de espacio alrededor del contenido */
     }
 
     .footer-content {
-        flex-direction: column; /* Cambiar a disposición de columna */
-        align-items: center; /* Centrar los elementos horizontalmente */
-        text-align: center; /* Centrar el texto */
+        flex-direction: column;
+        /* Cambiar a disposición de columna */
+        align-items: center;
+        /* Centrar los elementos horizontalmente */
+        text-align: center;
+        /* Centrar el texto */
     }
 
     .map-container {
-        margin: 0 auto; /* Centrar el mapa horizontalmente */
+        margin: 0 auto;
+        /* Centrar el mapa horizontalmente */
     }
 
     .footer-info {
-        margin: 1em 0; /* Añadir un poco de espacio entre los elementos */
+        margin: 1em 0;
+        /* Añadir un poco de espacio entre los elementos */
     }
 }
