@@ -79,7 +79,6 @@ header .logo span {
     line-height: 30px;
     transition: background-color 0.3s;
     margin-right: 7.5em;
-    /* Ajustado el margen derecho */
 }
 
 .menu a {
@@ -316,9 +315,20 @@ header .logo span {
 
 .imagenes_productos::-webkit-scrollbar-track {
     background-color: #333333;
-    /* Color del fondo de la barra de desplazamiento */
     border-radius: 5px;
-    /* Redondea los bordes del fondo de la barra de desplazamiento */
+}
+
+.video{
+    max-width: 400px; 
+    border-radius: 10px; 
+    margin-top: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+video:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
 }
 
 .footer {
@@ -365,7 +375,6 @@ header .logo span {
 
 .footer-info a {
     text-decoration: none;
-    /* Elimina el subrayado del enlace */
     color: inherit;
     transition: background-color 0.3s ease;
 }
@@ -404,16 +413,12 @@ header .logo span {
 @media screen and (max-width: 600px) {
     header.header {
         padding: 0 1em;
-        /* Reducción del padding en dispositivos más pequeños */
         height: 4em;
-        /* Reducción de la altura del encabezado */
     }
 
     .nav {
         margin-top: 1%;
-        /* Ajuste del margen superior */
         width: 90%;
-        /* Reducción del ancho del contenedor de navegación */
     }
 
     .header .logo {
@@ -423,7 +428,6 @@ header .logo span {
     .menu {
         margin-right: 2.5em;
         margin-top: 1.8em;
-        /* Ajuste del margen superior */
         font-size: 0.8em;
     }
 
@@ -433,14 +437,12 @@ header .logo span {
 
     .article {
         width: 90%;
-        /* Reducción del ancho del artículo */
         margin-top: 2em;
         /* Ajuste del margen superior */
     }
 
     .article-image img {
         width: 100%;
-        /* Ajustar el ancho de la imagen al contenedor */
         height: auto;
         /* Mantener la proporción */
         border-radius: 0;
@@ -451,7 +453,6 @@ header .logo span {
         width: 100%;
         /* Ocupar todo el ancho disponible */
         padding: 10px;
-        /* Añadir espacio alrededor del texto */
     }
 
     .article h1 {
@@ -459,7 +460,6 @@ header .logo span {
         /* Reducción del tamaño del título */
     }
 
-    /* Modificaciones para el botón flotante */
     .floating-button {
         bottom: 50px;
         right: 12px;
@@ -468,25 +468,19 @@ header .logo span {
     .footer {
         margin-top: 2em;
         padding: 20px;
-        /* Añadir un poco de espacio alrededor del contenido */
     }
 
     .footer-content {
         flex-direction: column;
-        /* Cambiar a disposición de columna */
         align-items: center;
-        /* Centrar los elementos horizontalmente */
         text-align: center;
-        /* Centrar el texto */
     }
 
     .map-container {
         margin: 0 auto;
-        /* Centrar el mapa horizontalmente */
     }
 
     .footer-info {
         margin: 1em 0;
-        /* Añadir un poco de espacio entre los elementos */
     }
 }
